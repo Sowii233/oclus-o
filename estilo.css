@@ -1,0 +1,100 @@
+body {
+    font-family: FreeMono, monospace;
+    background-image: url('cherry.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.815);
+    text-align: center;
+    padding-top: 2%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center 10%;
+    font-size: 22px;
+    background-blend-mode: multiply;
+    color: #ffffff;
+}
+
+div {
+    color: #ffffff;
+    opacity: 1;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    padding-top: 3%;
+}
+
+ul {
+    list-style: none;
+    /* Remove o estilo de lista padrão */
+    padding-left: 0;
+    /* Remove o padding esquerdo */
+    margin: 0;
+    /* Remove a margem padrão */
+    padding-top: 0%;
+}
+
+ul li {
+    position: relative;
+    /* Define o posicionamento relativo para que o ::before possa ser posicionado relativamente a cada item da lista */
+    padding-left: 400px;
+    /* Adiciona espaço para o círculo */
+    margin-bottom: 10px;
+    /* Espaçamento entre os itens */
+    text-align: left;
+    /* Garante que o texto esteja alinhado à esquerda dentro do li */
+}
+
+ul li::before {
+    content: '';
+    /* Necessário para adicionar o pseudo-elemento */
+    position: absolute;
+    /* Posiciona o círculo absolutamente em relação ao item da lista */
+    left: 380px;
+    /* Alinha o círculo à esquerda do item */
+    top: 50%;
+    /* Centraliza o círculo verticalmente */
+    transform: translateY(-50%);
+    /* Ajusta o posicionamento para centralizar verticalmente */
+    width: 10px;
+    /* Largura do círculo */
+    height: 10px;
+    /* Altura do círculo */
+    background-color: #000;
+    /* Cor do círculo */
+    border-radius: 50%;
+    /* Torna o quadrado um círculo */
+}
+
+.container {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    color: #ccc;
+    background-color: #000;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: rgb(51, 15, 30);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.morte {
+    position: absolute;
+    top: 650px;
+    /* Distância do topo do contêiner */
+    left: 950px;
+}
