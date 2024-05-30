@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrever-se</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="arvore.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="header" class="div" style="background-color: rgb(12, 3, 7); width: 3000px; height: 100px;">
+        <h1>Bem-Vindos ao Trajeto à Oclusão!</h1>
+    </div>
+    <h2>REGRAS:</h2>
+    <ul>
+        <li>Uma vez dentro do jogo é impossível sair.</li>
+        <li>A única forma de pontuar é matando jogadores, e ao ficar 7 dias sem pontuar, sua energia é revogada.</li>
+        <li>A cada inimigo derrotado, ganha-se 5 pontos, porém, não feiticeiros valem 7 pontos.</li>
+        <li>Um inimigo só é derrotado quando ele alcançar a morte.</li>
+        <li>O jogo encerra ao restar apenas um jogador.</li>
+        <li>O vencedor receberá a Técnica Suprema, caçada a milênios de anos.</li>
+        <li>Ao fazer 100 pontos, jogadores podem criar uma regra, regra essa que não necessariamente será aceita pelo
+            mestre do jogo
+        </li>
+        <li>Regras criadas não podem influenciar as regras anteriores</li>
+    </ul>
+    <div class="morte">
+        <img src="dragao.png">
+    </div>
+    <div class="container">
+        Junte-se ao jogo!
+        <button id="redirectButton">Tornar-se competidor</button>
+
+        <script>
+            // Seleciona o botão pelo ID
+            const button = document.getElementById('redirectButton');
+
+            // Adiciona um evento de clique ao botão
+            button.addEventListener('click', function () {
+                // Redireciona para o site desejado
+                window.location.href = 'https://discord.gg/zzWXEQUk';
+            });
+        </script>
+    </div>
+</body>
+
+</html>
